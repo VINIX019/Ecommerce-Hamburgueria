@@ -11,6 +11,7 @@ tailwind.config = {
     }
 }
 
+const observacao = document.getElementById('obs');
 const paymentMethod = document.getElementById('payment-method');
 const menu = document.getElementById('menu');
 const cartBtn = document.getElementById('cart-btn');
@@ -59,12 +60,21 @@ menu.addEventListener('click', function (event) {
         const name = parentButton.getAttribute('data-name');
         const price = parseFloat(parentButton.getAttribute('data-price'));
 
-        addToCart(name, price)
+        addToCart(name, price);
 
+        Toastify({
+            text: "Item adicionado ao carrinho!",
+            duration: 3000,
+            close: true,
+            gravity: "top",
+            position: "right",
+            stopOnFocus: true,
+            style: {
+                background: "#10b981", 
+            },
+        }).showToast();
     }
-
-})
-
+});
 function addToCart(name, price) {
 
     const hasItem = cart.find(item => item.name === name)
@@ -184,6 +194,7 @@ checkoutBtn.addEventListener('click', function () {
     const pedido = `
     Endereço de entrega: ${addressInput.value}
     Metodo de pagamento: ${paymentMethod.value}
+    Observação: ${observacao.value}
     *Total: R$ ${cartTotal.textContent}*`
 
     const cartItemsMessage = `*Pedido:*\n${cartItems}\n${pedido}`;

@@ -160,6 +160,7 @@
         <option value="pix">Pix</option>
         <option value="cartao">Cartão (Crédito/Débito)</option>
       </select>
+      <input type="text" placeholder="Observação..." class="w-full border-2 p-1 rounded my-1" id="obs">
       <p class="text-red-500" id="address-warn"></p>
       <div class="flex items-center justify-between mt-5 w-full">
         <button id="close-modal-btn">Fechar</button>
@@ -171,13 +172,14 @@
 
   </div>
 
-  <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+  <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center flex-col">
     <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
       (<span id="cart-count">0</span>)
       Veja meu carrinho
       <i class="fa fa-cart-plus text-lg text-white"></i>
     </button>
   </footer>
+      <iframe class="w-full " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.083343340761!2d-47.06207562375707!3d-22.910296587998154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c8b741925a85%3A0x7f65542c4ec76958!2sCentro%2C%20Campinas%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1768172976028!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="script.js"></script>
 </body>
