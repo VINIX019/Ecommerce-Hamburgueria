@@ -49,4 +49,6 @@ Check out the project: [https://ecommerce-hamburgueria-sand.vercel.app/](https:/
 * **Toastify JS:** Custom system alerts.
 * **Font Awesome:** Interface icons.
 
+<img width="1920" height="958" alt="image" src="https://github.com/user-attachments/assets/818c13c6-7906-4ee8-8a25-658847447a58" />
+<img width="650" height="709" alt="image" src="https://github.com/user-attachments/assets/15e02932-9114-4533-ba80-a335e41a7ef7" />
 
